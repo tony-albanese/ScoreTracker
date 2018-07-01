@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.scoretracker.MainActivity">
+
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:gravity="center"
+        android:text="Scoreboard"
+        android:textColor="#FFFFFF"
+        android:textSize="56sp" />
+
+
+    <LinearLayout
+        android:id="@+id/team_horizontal_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/team_A_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamA"
+                style="@style/teamLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Team" />
+
+            <TextView
+                android:id="@+id/score_team_A"
+                style="@style/scoreStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                style="@style/baseLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score" />
+
+            <TextView
+                android:id="@+id/timeoutsRemaining_team_A"
+                style="@style/timeoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <TextView
+                style="@style/baseLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timeouts" />
+
+            <Button
+                android:id="@+id/button_touchdown_team_A"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="touchdownScoredA"
+                android:text="touchdown!" />
+
+            <Button
+                android:id="@+id/fieldGoal_team_A"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fieldGoalScoredA"
+                android:text="field goal" />
+
+            <Button
+                android:id="@+id/button_useTimeout_teamA"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="useTimeoutA"
+                android:text="use a timeout" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/team_B_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/teamB"
+                style="@style/teamLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visitors" />
+
+            <TextView
+                android:id="@+id/score_team_B"
+                style="@style/scoreStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0" />
+
+            <TextView
+                style="@style/baseLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score" />
+
+            <TextView
+                android:id="@+id/timeoutsRemaining_team_B"
+                style="@style/timeoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <TextView
+                style="@style/baseLabelStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Timeouts" />
+
+            <Button
+                android:id="@+id/button_touchdown_team_B"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="touchdownScoredB"
+                android:text="touchdown!" />
+
+            <Button
+                android:id="@+id/fieldGoal_team_B"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fieldGoalScoredB"
+                android:text="field goal" />
+
+            <Button
+                android:id="@+id/button_useTimeout_teamB"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="useTimeoutB"
+                android:text="use a timeout" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="resetAll"
+        android:text="reset all values" />
+
+
+</LinearLayout>

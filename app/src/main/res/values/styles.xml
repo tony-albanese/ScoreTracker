@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="scoreStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textSize">45sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#536DFE</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+
+    <style name="timeoutStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textSize">45sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+
+    </style>
+
+    <style name="teamLabelStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="baseLabelStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+
+    <style name="buttonStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>
